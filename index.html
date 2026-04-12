@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header" class="fixed-top py-4 transition-header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="homepage.html" class="d-flex align-items-center text-decoration-none">
+                <img src="imgs/app_logo.webp" width="38" alt="">
+                <span class="ms-2 fw-semibold font-display logo-text d-block"
+                    style="color: var(--cp-gold); font-size: 24px;">
+                    أبعاد الكيان المتقدمة
+                </span>
+            </a>
+            <nav class="d-none d-lg-flex align-items-center gap-4">
+                <a href="#hero" class="gold-link nav-link-custom">الرئيسية</a>
+                <a href="#services" class="gold-link nav-link-custom">الخدمات</a>
+                <a href="#about" class="gold-link nav-link-custom">من نحن</a>
+                <a href="#why-us" class="gold-link nav-link-custom">لماذا نحن</a>
+                <a href="#blog" class="gold-link nav-link-custom">المدونة</a>
+                <a href="#contact" class="gold-link nav-link-custom">تواصل معنا</a>
+            </nav>
+            <div class="d-flex align-items-center gap-3">
+                <a href="#contact" class="btn btn-custom d-none d-md-inline-flex align-items-center gap-2 btn-magnetic">
+                    احصل على عرض سعر
+                    <i class="fas fa-arrow-alt-circle-left"></i>
+                </a>
+                <button id="menuBtn" class="hamburger d-lg-none" aria-label="القائمة">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <div id="mobileMenu" class="mobile-menu d-flex flex-column">
+        <div class="d-flex justify-content-between align-items-center p-4 border-bottom border-light">
+            <div class="d-flex align-items-center gap-2">
+                <img src="imgs/app_logo.webp" width="36">
+                <span class="text-white fw-bold font-display">أبعاد الكيان المتقدمة</span>
+            </div>
+
+            <button id="closeMenu" class="close-btn">✕</button>
+        </div>
+
+        <div class="menu-links p-4 d-flex flex-column justify-content-center">
+            <a href="#hero" class="gold-link nav-link-custom">الرئيسية</a>
+            <a href="#services" class="gold-link nav-link-custom">الخدمات</a>
+            <a href="#about" class="gold-link nav-link-custom">من نحن</a>
+            <a href="#why-us" class="gold-link nav-link-custom">لماذا نحن</a>
+            <a href="#blog" class="gold-link nav-link-custom">المدونة</a>
+            <a href="#contact" class="gold-link nav-link-custom">تواصل معنا</a>
+        </div>
+
+        <div class="p-4">
+            <a href="#contact" class="btn w-100 fw-bold"
+                style="background: var(--cp-gold); color: var(--cp-forest); border-radius: 50px;">
+                احصل على عرض سعر
+                <i class="fas fa-arrow-alt-circle-left"></i>
+            </a>
+        </div>
+    </div>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1726087165132-d64b2401728a" class="hero-bg-img" />
+            <div class="hero-scrim"></div>
+            <div class="hero-top-gradient"></div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>مرر لأسفل</span>
+            ↓
+        </div>
+
+        <div class="container hero-content">
+            <div class="hero-eyebrow">
+                <span class="dot pulse-gold"></span>
+                <span class="text">
+                    تأسست عام 2007 · منطقة الخليج · مقاولات متكاملة الخدمات
+                </span>
+            </div>
+
+            <h1 class="hero-title reveal">
+                معا نبني
+                <span class="italic text-shimmer">المستقبل</span><br>
+                <span class="light">مشروعًا تلو الآخر</span>
+            </h1>
+
+            <p class="hero-sub reveal delay-200">
+                من الأساسات الخرسانية المسلحة إلى تنسيق الحدائق بدقة عالية — تقدم أبعاد الكيان المتقدمة
+                حلول إنشاءات متكاملة عبر 5 قطاعات متخصصة.
+            </p>
+
+            <div class="hero-cta reveal delay-300">
+                <a href="#services" class="btn btn-gold">استكشف الخدمات
+                    <i class="fas fa-arrow-alt-circle-left"></i>
+                </a>
+                <a href="#contact" class="btn btn-outline-light fw-semibold">احصل على عرض سعر</a>
+            </div>
+
+            <div class="hero-stats reveal delay-400">
+
+                <div class="stat-box">
+                    <h3>18+</h3>
+                    <span>سنة من التميز</span>
+                </div>
+
+                <div class="stat-box">
+                    <h3>640+</h3>
+                    <span>مشروع تم تنفيذه</span>
+                </div>
+
+                <div class="stat-box">
+                    <h3>5</h3>
+                    <span>قطاعات خدمات</span>
+                </div>
+
+                <div class="stat-box">
+                    <h3>99%</h3>
+                    <span>رضا العملاء</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+
+        <div class="container">
+            <div class="mb-5 reveal">
+                <span class="section-label">عن أبعاد الكيان المتقدمة</span>
+            </div>
+
+            <div class="row g-4 align-items-start">
+                <div class="col-lg-7 reveal-left">
+                    <div class="position-relative">
+
+                        <div class="img-overlay-card">
+                            <img src="https://img.rocket.new/generatedImages/rocket_gen_img_190016e72-1773228478366.png"
+                                class="img-fluid w-100 grayscale-hover">
+                        </div>
+
+                        <div class="floating-card glass-card">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <span class="dot pulse-gold"></span>
+                                <span class="small text-muted">المشاريع النشطة</span>
+                            </div>
+                            <h3>34</h3>
+                            <p class="small text-muted">داخل المملكة العربية السعودية</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-5 reveal-right d-flex flex-column justify-content-between">
+
+                    <div>
+                        <h2 class="about-title">
+                            ما يقارب عقدين من الزمن<br>
+                            <span>في بناء الثقة.</span>
+                        </h2>
+
+                        <p class="about-text">
+                            تأسست أبعاد الكيان المتقدمة على قناعة واحدة: أن السوق السعودي يستحق شريك مقاولات
+                            قادر على تنفيذ جميع مراحل البناء تحت سقف واحد وبأعلى معايير الجودة.
+                        </p>
+
+                        <p class="about-text">
+                            اليوم تخدم أقسامنا الخمسة المتخصصة المطورين والجهات الحكومية والعملاء
+                            داخل المملكة العربية السعودية فقط.
+                        </p>
+                    </div>
+                    <div class="timeline">
+
+                        <div class="timeline-item">
+                            <span>2007</span>
+                            <p>تأسست في الرياض، المملكة العربية السعودية بفريق مكون من 12 مهندس</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span>2011</span>
+                            <p>التوسع داخل المملكة وتنفيذ أول مشروع بنية تحتية رئيسي</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span>2016</span>
+                            <p>إطلاق قسم العزل؛ الحصول على شهادة ISO 9001</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span>2021</span>
+                            <p>المشروع رقم 500 داخل المملكة — توسع 5 أقسام متخصصة</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span>2026</span>
+                            <p>أكثر من 640 مشروع مكتمل داخل المملكة العربية السعودية</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row g-4 mt-5 pt-4 border-top justify-content-center">
+
+                <div class="col-sm-6 col-md-3 reveal">
+                    <div class="award-box">
+                        <div class="icon-box">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div>
+                            <h6>شهادة ISO 9001</h6>
+                            <small>إدارة الجودة</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 reveal">
+                    <div class="award-box">
+                        <div class="icon-box">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div>
+                            <h6>جائزة مقاول متميز</h6>
+                            <small>2022 و 2024</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 reveal">
+                    <div class="award-box">
+                        <div class="icon-box">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div>
+                            <h6>أكثر من 280 متخصص</h6>
+                            <small>فريق داخلي</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 reveal">
+                    <div class="award-box">
+                        <div class="icon-box">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div>
+                            <h6>تغطية داخل المملكة</h6>
+                            <small>السعودية فقط</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section id="services" class="py-5 bg-light service-section">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5">
+                <div>
+                    <span class="text-uppercase text-warning d-block mb-2">
+                        خبراتنا
+                    </span>
+                    <h2 class="display-5 fw-bold">
+                        خدماتنا
+                    </h2>
+                </div>
+
+                <div class="mt-3 mt-md-0" style="max-width: 350px;">
+                    <p class="text-muted">
+                        يعمل كل قسم بفريق متخصص ومعدات متقدمة وأنظمة جودة دقيقة لضمان تنفيذ كل مرحلة بأعلى مستوى من
+                        الاحترافية.
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="service-card">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1b2a8a5dd-1773756752311.png"
+                            class="img-fluid w-100 h-100 object-fit-cover">
+                        <div class="overlay"></div>
+
+                        <div class="content">
+                            <span class="small text-light opacity-50">المجال 01</span>
+
+                            <h3>اعمال اللاند سكيب</h3>
+
+                            <p>تحويل المساحات الخارجية إلى بيئات متكاملة بدقة عالية...</p>
+
+                            <div class="tags">
+                                <span>نجيله ملاعب </span>
+                                <span>نجيله حدائق </span>
+                                <span>أعمال مطاط</span>
+                                <span>أكريليك</span>
+                                <span>أعمال EPDM</span>
+                                <span>المطاط الأكريليك</span>
+                                <span>البندورة</span>
+                                <span>الإنترلوك</span>
+                                <span>أعمدة الكهرباء الخارجية</span>
+                                <span>ديكور وتصميم حدائق</span>
+                                <span>تصميم ملاعب</span>
+                                <span>تصميم مضامير</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1651399436030-186bbf8a573e"
+                            class="img-fluid w-100 h-100 object-fit-cover">
+                        <div class="overlay"></div>
+
+                        <div class="content">
+                            <span class="small text-light opacity-50">المجال 02</span>
+                            <h3>البنية التحتية</h3>
+                            <p>تنفيذ شبكات الصرف والمياه ومحطات التحلية بكفاءة عالية...</p>
+                            <div class="tags">
+                                <span>إنشاء شبكات الصرف الصحي</span>
+                                <span>أعمال تحلية المياه</span>
+                                <span>استبدال خطوط المياه والصرف الصحي</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1da591c81-1769499136631.png"
+                            class="img-fluid w-100 h-100 object-fit-cover">
+                        <div class="overlay"></div>
+
+                        <div class="content">
+                            <span class="small text-light opacity-50">المجال 03</span>
+                            <h3>أعمال العزل</h3>
+                            <p>حماية المباني من الحرارة والرطوبة باستخدام أحدث تقنيات العزل...</p>
+                            <div class="tags">
+                                <span class="badge custom-tag">عزل الأسطح</span>
+                                <span class="badge custom-tag">عزل الفوم</span>
+                                <span class="badge custom-tag">العزل الحراري</span>
+                                <span class="badge custom-tag">عزل خزانات المياه</span>
+                                <span class="badge custom-tag">خزانات المحطات</span>
+                                <span class="badge custom-tag">عزل داخلي وخارجي</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="service-card">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_170d37759-1765093092088.png"
+                            class="img-fluid w-100 h-100 object-fit-cover">
+                        <div class="overlay"></div>
+
+                        <div class="content">
+                            <span class="small text-light opacity-50">المجال 04</span>
+                            <h3>أعمال الإنشاءات (الهيكل الخرساني)</h3>
+                            <p>
+                                تنفيذ أعمال العظم للفلل والعمائر بدءًا من القواعد المسلحة وحتى الهيكل الكامل، مع دقة
+                                عالية في التنفيذ وجودة في التشطيبات.
+                            </p>
+
+                            <div class="tags">
+                                <span class="badge custom-tag">إنشاء فلل عظم</span>
+                                <span class="badge custom-tag">إنشاء عمائر</span>
+                                <span class="badge custom-tag">قواعد مسلحة</span>
+                                <span class="badge custom-tag">هيكل خرساني كامل</span>
+                                <span class="badge custom-tag">أعمال مسلحات</span>
+                                <span class="badge custom-tag">تشطيبات</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-8">
+                    <div class="service-card">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_11d49fe7d-1775735742056.png"
+                            class="img-fluid w-100 h-100 object-fit-cover">
+                        <div class="overlay"></div>
+
+                        <div class="content">
+                            <span class="small text-light opacity-50">المجال 05</span>
+                            <h3>أعمال التشطيب والصيانة</h3>
+                            <p>
+                                نقدم خدمات التشطيب الداخلي والخارجي بأعلى جودة، مع تنفيذ أعمال السباكة والكهرباء
+                                والتشطيبات النهائية بدقة واحترافية.
+                            </p>
+
+                            <div class="tags">
+                                <span class="badge custom-tag">تشطيب واجهات خارجية</span>
+                                <span class="badge custom-tag">تشطيب داخلي كامل</span>
+                                <span class="badge custom-tag">أعمال سباكة</span>
+                                <span class="badge custom-tag">أعمال كهرباء</span>
+                                <span class="badge custom-tag">سيراميك</span>
+                                <span class="badge custom-tag">لياسة</span>
+                                <span class="badge custom-tag">تشجير</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="cta-card text-white p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="text-warning small">جاهز تبدأ مشروعك؟</span>
+                            <h4 class="mt-3">ابدأ مشروعك معانا النهاردة</h4>
+                        </div>
+
+                        <div>
+                            <a href="#" class="btn btn-warning w-100 mb-2">اطلب عرض سعر</a>
+                            <a href="#" class="btn btn-outline-light w-100">تصفح الخدمات</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="why-us" class="why-us-section text-white">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5">
+                <div>
+                    <span class="text-warning fw-bold d-block mb-2">
+                        لماذا نحن
+                    </span>
+                    <h2 class="display-5 fw-bold">
+                        نعمل بطريقة مختلفة <br>
+                        <span class=" fst-italic">ونحقق نتائج حقيقية</span>
+                    </h2>
+                </div>
+
+                <p class="text-white-50 mt-3 mt-md-0" style="max-width: 350px;">
+                    نحن لا ننفذ المشاريع فقط، بل نبني سمعة قوية. إليك ما يجعلنا الخيار الأول لعملائنا.
+                </p>
+            </div>
+
+            <div class="row g-3 align-items-center">
+                <div class="col-lg-6">
+                    <div class="bento-card  p-0">
+                        <div class="row g-0 text-center">
+
+                            <div class="col-6 counter-box">
+                                <h2 class="counter" data-target="640">0</h2>
+                                <p>مشروع تم تنفيذه</p>
+                            </div>
+
+                            <div class="col-6 counter-box">
+                                <h2 class="counter" data-target="18">0</h2>
+                                <p>سنة خبرة</p>
+                            </div>
+
+                            <div class="col-6 counter-box">
+                                <h2 class="counter" data-target="280">0</h2>
+                                <p>فريق عمل محترف</p>
+                            </div>
+
+                            <div class="col-6 counter-box">
+                                <h2 class="counter" data-target="99">0</h2>
+                                <p>% التزام بالمواعيد</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bento-card position-relative overflow-hidden h-100">
+                        <img src="https://images.unsplash.com/photo-1616678208426-60d03213ca85"
+                            class="w-100 h-100 object-fit-cover">
+
+                        <div class="overlay"></div>
+
+                        <div class="position-absolute bottom-0 p-4">
+                            <span class="text-warning small">أحدث مشروع</span>
+                            <h4>مجمع فلل النخيل - الرياض</h4>
+                            <p class="small text-white-50">48 فيلا • هيكل وتشطيب • تم التسليم 2026</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="bento-card p-4 h-100 text-center">
+                        <div class="icon-box mb-3 mx-auto">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h6>إدارة متكاملة</h6>
+                        <p class="small text-white-50">
+                            عقد واحد وفريق واحد لإدارة المشروع بالكامل بدون أي تعقيدات.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="bento-card p-4 h-100 text-center">
+                        <div class="icon-box mb-3 mx-auto">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h6>إدارة تعتمد على البيانات</h6>
+                        <p class="small text-white-50">
+                            تقارير مستمرة ومتابعة دقيقة لكل مرحلة من المشروع.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="bento-card p-4 h-100 text-center">
+                        <div class="icon-box mb-3 mx-auto">
+                            <i class="fas fa-screwdriver-wrench"></i>
+                        </div>
+                        <h6>معدات خاصة</h6>
+                        <p class="small text-white-50">
+                            نمتلك معداتنا الخاصة مما يضمن سرعة التنفيذ بدون تأخير.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="bento-card p-4 h-100 text-center">
+                        <div class="icon-box mb-3 mx-auto">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+                        <h6>حلول مناسبة للمناخ</h6>
+                        <p class="small text-white-50">
+                            مواد مصممة لتحمل الحرارة والرطوبة والظروف القاسية.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="blog" class="blog-section overflow-hidden">
+
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end mb-4 flex-wrap gap-3">
+
+                <div class="reveal">
+                    <span class="text-warning fw-bolder text-uppercase d-block mb-2">
+                        رؤى ومعرفة
+                    </span>
+
+                    <h2 class="display-5 fw-bold text-dark">
+
+                        <span class="fw-bold fst-italic">المدونة</span>
+                    </h2>
+                </div>
+                <div class="d-none d-md-flex gap-2 reveal">
+
+                    <button class="btn btn-outline-dark rounded-circle" id="scrollLeft">
+                        ←
+                    </button>
+
+                    <button class="btn btn-outline-dark rounded-circle" id="scrollRight">
+                        →
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+        <div id="blogScroll" class="d-flex gap-3 overflow-auto px-3 pb-3">
+
+            <div class="blog-card">
+                <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1d3bb6f2a-1773147671823.png">
+
+                <div class="p-3">
+                    <span class="badge bg-dark mb-2">البنية التحتية</span>
+
+                    <div class="small text-muted mb-2">28 مارس 2026 • 6 دقائق</div>
+
+                    <h5 class="fw-bold">كيف تطورت محطات تحلية المياه في الخليج</h5>
+
+                    <p class="small text-muted">
+                        تطور هندسة محطات التحلية جعل المشاريع أسرع وأكثر كفاءة.
+                    </p>
+
+                    <a href="blog-details.html" class="text-warning text-decoration-none fw-bold">
+                        اقرأ المقال
+                        <i class="fas fa-arrow-alt-circle-left"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1700730401321-e92ec769d928">
+
+                <div class="p-3">
+                    <span class="badge bg-dark mb-2">الملاعب</span>
+
+                    <div class="small text-muted mb-2">12 مارس 2026 • 5 دقائق</div>
+
+                    <h5 class="fw-bold">معايير ملاعب FIFA</h5>
+
+                    <p class="small text-muted">
+                        كل ما تحتاج معرفته عن تصميم الملاعب الاحترافية.
+                    </p>
+
+                    <a href="blog-details.html" class="text-warning text-decoration-none fw-bold">
+                        اقرأ المقال
+                        <i class="fas fa-arrow-alt-circle-left"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1da591c81-1769499136631.png">
+
+                <div class="p-3">
+                    <span class="badge bg-dark mb-2">العزل</span>
+
+                    <div class="small text-muted mb-2">24 فبراير 2026 • 7 دقائق</div>
+
+                    <h5 class="fw-bold">أهمية العزل الحراري في الخليج</h5>
+
+                    <p class="small text-muted">
+                        تقليل استهلاك الطاقة وتحسين كفاءة المباني.
+                    </p>
+
+                    <a href="blog-details.html" class="text-warning text-decoration-none fw-bold">
+                        اقرأ المقال
+                        <i class="fas fa-arrow-alt-circle-left"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1d3bb6f2a-1773147671823.png">
+
+                <div class="p-3">
+                    <span class="badge bg-dark mb-2">البنية التحتية</span>
+
+                    <div class="small text-muted mb-2">28 مارس 2026 • 6 دقائق</div>
+
+                    <h5 class="fw-bold">كيف تطورت محطات تحلية المياه في الخليج</h5>
+
+                    <p class="small text-muted">
+                        تطور هندسة محطات التحلية جعل المشاريع أسرع وأكثر كفاءة.
+                    </p>
+
+                    <a href="blog-details.html" class="text-warning text-decoration-none fw-bold">
+                        اقرأ المقال
+                        <i class="fas fa-arrow-alt-circle-left"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1700730401321-e92ec769d928">
+
+                <div class="p-3">
+                    <span class="badge bg-dark mb-2">الملاعب</span>
+
+                    <div class="small text-muted mb-2">12 مارس 2026 • 5 دقائق</div>
+
+                    <h5 class="fw-bold">معايير ملاعب FIFA</h5>
+
+                    <p class="small text-muted">
+                        كل ما تحتاج معرفته عن تصميم الملاعب الاحترافية.
+                    </p>
+
+                    <a href="blog-details.html" class="text-warning text-decoration-none fw-bold">
+                        اقرأ المقال
+                        <i class="fas fa-arrow-alt-circle-left"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1da591c81-1769499136631.png">
+
+                <div class="p-3">
+                    <span class="badge bg-dark mb-2">العزل</span>
+
+                    <div class="small text-muted mb-2">24 فبراير 2026 • 7 دقائق</div>
+
+                    <h5 class="fw-bold">أهمية العزل الحراري في الخليج</h5>
+
+                    <p class="small text-muted">
+                        تقليل استهلاك الطاقة وتحسين كفاءة المباني.
+                    </p>
+
+                    <a href="blog-details.html" class="text-warning text-decoration-none fw-bold">
+                        اقرأ المقال
+                        <i class="fas fa-arrow-alt-circle-left"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1d3bb6f2a-1773147671823.png">
+
+                <div class="p-3">
+                    <span class="badge bg-dark mb-2">البنية التحتية</span>
+
+                    <div class="small text-muted mb-2">28 مارس 2026 • 6 دقائق</div>
+
+                    <h5 class="fw-bold">كيف تطورت محطات تحلية المياه في الخليج</h5>
+
+                    <p class="small text-muted">
+                        تطور هندسة محطات التحلية جعل المشاريع أسرع وأكثر كفاءة.
+                    </p>
+
+                    <a href="blog-details.html" class="text-warning text-decoration-none fw-bold">
+                        اقرأ المقال
+                        <i class="fas fa-arrow-alt-circle-left"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1700730401321-e92ec769d928">
+
+                <div class="p-3">
+                    <span class="badge bg-dark mb-2">الملاعب</span>
+
+                    <div class="small text-muted mb-2">12 مارس 2026 • 5 دقائق</div>
+
+                    <h5 class="fw-bold">معايير ملاعب FIFA</h5>
+
+                    <p class="small text-muted">
+                        كل ما تحتاج معرفته عن تصميم الملاعب الاحترافية.
+                    </p>
+
+                    <a href="blog-details.html" class="text-warning text-decoration-none fw-bold">
+                        اقرأ المقال
+                        <i class="fas fa-arrow-alt-circle-left"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1da591c81-1769499136631.png">
+
+                <div class="p-3">
+                    <span class="badge bg-dark mb-2">العزل</span>
+
+                    <div class="small text-muted mb-2">24 فبراير 2026 • 7 دقائق</div>
+
+                    <h5 class="fw-bold">أهمية العزل الحراري في الخليج</h5>
+
+                    <p class="small text-muted">
+                        تقليل استهلاك الطاقة وتحسين كفاءة المباني.
+                    </p>
+
+                    <a href="blog-details.html" class="text-warning text-decoration-none fw-bold">
+                        اقرأ المقال
+                        <i class="fas fa-arrow-alt-circle-left"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="contact" class="contact-section">
+
+        <div class="container">
+            <div class="text-center mb-5">
+
+                <span class="text-warning small text-uppercase d-block mb-2">
+                    ابدأ مشروعك
+                </span>
+
+                <h2 class="display-4 fw-bold text-white">
+                    لنبدأ
+                    مشروع يدوم
+                </h2>
+
+                <p class="text-white-50 mt-3 mx-auto" style="max-width:500px;">
+                    أخبرنا عن مشروعك وسنقوم بالرد خلال 24 ساعة.
+                </p>
+
+            </div>
+
+            <div class="row g-4 align-items-center">
+
+                <div class="col-lg-7">
+
+                    <div id="formCard" class="p-4 contact-card">
+
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label text-warning small">الاسم الكامل</label>
+                                    <input type="text" class="form-control" id="name" placeholder="ادخل الاسم">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label text-warning small">الإيميل</label>
+                                    <input type="email" class="form-control" id="email" placeholder="name@email.com">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label text-warning small">رقم الهاتف</label>
+                                    <input type="text" class="form-control" id="phone" placeholder="+20 10 000 0000">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label text-warning small">نوع الخدمة</label>
+
+                                    <select id="service" class="form-select text-warning">
+                                        <option class="text-warning" value="">اختر الخدمة</option>
+                                        <option class="text-warning">التشجير</option>
+                                        <option class="text-warning">البنية التحتية</option>
+                                        <option class="text-warning">العزل</option>
+                                        <option class="text-warning">الإنشاءات</option>
+                                        <option class="text-warning">التشطيب والصيانة</option>
+                                    </select>
+
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label text-warning small">تفاصيل المشروع</label>
+                                    <textarea id="message" rows="4" class="form-control"
+                                        placeholder="اكتب تفاصيل المشروع..."></textarea>
+                                </div>
+
+                                <div class="col-12">
+                                    <button class="btn btn-warning w-100 py-3 fw-bold">
+                                        إرسال الطلب
+                                        <i class="fas fa-arrow-alt-circle-left"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+
+                        </form>
+                        <div id="successMsg" class="text-center d-none">
+                            <div class="mb-3">
+                                <span class="display-5 text-warning">✔</span>
+                            </div>
+                            <h4 class="text-white">تم استلام طلبك</h4>
+                            <p class="text-white-50">سنقوم بالتواصل معك خلال 24 ساعة</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="contact-card p-4"
+                        style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://img.rocket.new/generatedImages/rocket_gen_img_14443bace-1775916330791.png); background-position: center; min-height: 400px; display: flex; flex-direction: column; gap: 20px;">
+                        <div class="d-flex mb-4">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt text-warning mt-1"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-warning d-block">المقر</h3>
+                                <p class="text-white mb-0">الرياض - السعودية</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="icon">
+                                <i class="fas fa-phone text-warning  mt-1"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-warning d-block">الهاتف</h3>
+                                <p class="text-white mb-0">+966 11 234 5678</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="icon">
+                                <i class="fas fa-envelope text-warning  mt-1"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-warning d-block">الإيميل</h3>
+                                <p class="text-white mb-0">info@company.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="icon">
+                                <i class="fas fa-clock text-warning  mt-1"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-warning d-block">الرد</h3>
+                                <p class="text-white mb-0">خلال 24 ساعة</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer-section text-white">
+
+        <div class="container py-5">
+
+            <div class="row g-4">
+                <div class="col-md-4">
+
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <img src="imgs/app_logo.webp" width="36" height="36" alt="logo">
+                        <h5 class="mb-0 fw-bold">أبعاد الكيان المتقدمة</h5>
+                    </div>
+
+                    <p class="text-white-50 small">
+                        مقاولات متكاملة في الخليج — من الأساس حتى التشطيب.
+                    </p>
+
+                    
+
+                </div>
+                <div class="col-md-4">
+
+                    <h6 class=" mb-3">الخدمات</h6>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#services" class="footer-link">اعمال اللاند سكيب</a></li>
+                        <li class="mb-3"><a href="#services" class="footer-link">اعمال البنية التحتية</a></li>
+                        <li class="mb-3"><a href="#services" class="footer-link">اعمال العزل</a></li>
+                        <li class="mb-3"><a href="#services" class="footer-link">أعمال الإنشاءات (الهيكل الخرساني)</a></li>
+                        <li class="mb-3"><a href="#services" class="footer-link">أعمال التشطيب والصيانة</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-md-4">
+                    <h6 class=" mb-3">الشركة</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#about" class="footer-link">من نحن</a></li>
+                        <li class="mb-3"><a href="#why-us" class="footer-link">لماذا نحن</a></li>
+                        <li class="mb-3"><a href="#blog" class="footer-link">المدونة</a></li>
+                        <li class="mb-3"><a href="#contact" class="footer-link">تواصل معنا</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+
+                <p class="small text-white-50 mb-0">
+                    © 2026 أبعاد الكيان المتقدمة - جميع الحقوق محفوظة
+                </p>
+
+                <div class="d-flex gap-3">
+                    <p>تم التنفيذ بواسطه شركة 
+                        <a href="" class="text-warning fw-bold text-decoration-none d-inline-block">GMT WEB</a>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <a href="https://wa.me/966545645603?text=مرحبا، أريد الاستفسار عن خدماتكم"
+   class="whatsapp-float"
+   target="_blank">
+
+  <i class="fab fa-whatsapp"></i>
+</a>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

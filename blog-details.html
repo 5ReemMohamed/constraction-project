@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header" class="fixed-top py-4 transition-header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html" class="d-flex align-items-center text-decoration-none">
+                <img src="imgs/app_logo.webp" width="38" alt="">
+                <span class="ms-2 fw-semibold font-display logo-text d-block"
+                    style="color: var(--cp-gold); font-size: 24px;">
+                    أبعاد الكيان المتقدمة
+                </span>
+            </a>
+            <nav class="d-none d-lg-flex align-items-center gap-4">
+                <a href="index.html#hero" class="gold-link nav-link-custom">الرئيسية</a>
+                <a href="index.html#services" class="gold-link nav-link-custom">الخدمات</a>
+                <a href="index.html#about" class="gold-link nav-link-custom">من نحن</a>
+                <a href="index.html#why-us" class="gold-link nav-link-custom">لماذا نحن</a>
+                <a href="index.html#blog" class="gold-link nav-link-custom">المدونة</a>
+                <a href="index.html#contact" class="gold-link nav-link-custom">تواصل معنا</a>
+            </nav>
+            <div class="d-flex align-items-center gap-3">
+                <a href="index.html#contact"
+                    class="btn btn-custom d-none d-md-inline-flex align-items-center gap-2 btn-magnetic">
+                    احصل على عرض سعر
+                    <i class="fas fa-arrow-alt-circle-left"></i>
+                </a>
+                <button id="menuBtn" class="hamburger d-lg-none" aria-label="القائمة">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <div id="mobileMenu" class="mobile-menu d-flex flex-column">
+        <div class="d-flex justify-content-between align-items-center p-4 border-bottom border-light">
+            <div class="d-flex align-items-center gap-2">
+                <img src="imgs/app_logo.webp" width="36">
+                <span class="text-white fw-bold font-display">أبعاد الكيان المتقدمة</span>
+            </div>
+
+            <button id="closeMenu" class="close-btn">✕</button>
+        </div>
+
+        <div class="menu-links p-4 d-flex flex-column justify-content-center">
+            <a href="index.html#hero" class="gold-link nav-link-custom">الرئيسية</a>
+            <a href="index.html#services" class="gold-link nav-link-custom">الخدمات</a>
+            <a href="index.html#about" class="gold-link nav-link-custom">من نحن</a>
+            <a href="index.html#why-us" class="gold-link nav-link-custom">لماذا نحن</a>
+            <a href="index.html#blog" class="gold-link nav-link-custom">المدونة</a>
+            <a href="index.html#contact" class="gold-link nav-link-custom">تواصل معنا</a>
+        </div>
+
+        <div class="p-4">
+            <a href="index.html#contact" class="btn w-100 fw-bold"
+                style="background: var(--cp-gold); color: var(--cp-forest); border-radius: 50px;">
+                احصل على عرض سعر
+                <i class="fas fa-arrow-alt-circle-left"></i>
+            </a>
+        </div>
+    </div>
+
+    <section class="blog-hero text-white d-flex align-items-end">
+        <div class="overlay"></div>
+
+        <div class="container position-relative pb-5">
+            <a href="index.html#blogs" class="text-warning text-decoration-none mb-3 d-inline-block">
+                <i class="fas fa-arrow-right"></i> العودة للمدونة
+            </a>
+
+            <span class="badge bg-warning text-dark mb-3">الإنشاءات</span>
+
+            <h1 class="fw-bold">
+                إنشاء الملاعب المعتمدة FIFA: ماذا تحتاج لتطبيق المعايير الصحيحة
+            </h1>
+
+            <div class="meta d-flex gap-4 mt-3 flex-wrap">
+                <span><i class="fas fa-calendar"></i> 12 مارس 2026</span>
+                <span><i class="fas fa-clock"></i> 5 دقائق قراءة</span>
+                <span><i class="fas fa-user"></i> فريق التحرير</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-lg-8 blog-content">
+                    <img src="https://images.unsplash.com/photo-1700730401321-e92ec769d928"
+                        class="img-fluid rounded-4 mb-4 shadow-sm" alt="">
+                    <p class="fw-bold text-dark">
+                        إنشاء الملاعب المعتمدة وفق معايير FIFA ليس مجرد بناء أرضية لعب، بل هو منظومة هندسية متكاملة
+                        تعتمد على
+                        الجودة والدقة في كل مرحلة من مراحل التنفيذ.
+                    </p>
+
+                    <p class="text-muted lh-lg">
+                        خلال السنوات الأخيرة، تطور قطاع إنشاء الملاعب بشكل كبير في منطقة الخليج، حيث أصبحت المعايير أكثر
+                        صرامة
+                        من حيث جودة المواد، أنظمة الصرف، وتحمل الظروف المناخية القاسية.
+                    </p>
+
+                    <h3 class="mt-5 section-title">أهمية دراسة التربة</h3>
+
+                    <p class="text-muted lh-lg">
+                        تعتبر دراسة التربة الخطوة الأولى والأهم في أي مشروع ملعب رياضي، حيث يتم تحديد قدرة الأرض على
+                        التحمل
+                        ومدى ملاءمتها للإنشاءات الثقيلة.
+                    </p>
+
+                    <div class="highlight-box">
+                        يتم إجراء اختبارات التربة لتحديد نسبة الرطوبة، الكثافة، وقوة التحمل قبل البدء في أي أعمال
+                        إنشائية.
+                    </div>
+
+                    <h3 class="mt-5 section-title">أنظمة الصرف المتقدمة</h3>
+
+                    <p class="text-muted lh-lg">
+                        أنظمة الصرف تعتبر عنصر أساسي في نجاح الملاعب، حيث تمنع تجمع المياه وتحافظ على جودة سطح الملعب.
+                    </p>
+
+                    <ul class="custom-list">
+                        <li>تصميم شبكات صرف تحت الأرض عالية الكفاءة</li>
+                        <li>استخدام مواد مقاومة للانسداد</li>
+                        <li>توجيه المياه إلى نقاط تصريف رئيسية</li>
+                    </ul>
+
+                    <img src="https://images.unsplash.com/photo-1586831232667-a56886826868"
+                        class="img-fluid rounded-4 my-4 shadow-sm" alt="">
+
+                    <h3 class="mt-4 section-title">اختيار العشب الصناعي</h3>
+
+                    <p class="text-muted lh-lg">
+                        يتم اختيار نوع العشب بناءً على الاستخدام المتوقع، سواء كان تدريبي أو مباريات رسمية.
+                    </p>
+
+                    <div class="quote-box">
+                        “اختيار العشب الصحيح يمكن أن يحدد عمر الملعب وكفاءته التشغيلية لسنوات طويلة.”
+                    </div>
+
+                    <p class="text-muted lh-lg">
+                        كما يتم مراعاة مقاومة العشب لدرجات الحرارة العالية وأشعة الشمس المباشرة في دول الخليج.
+                    </p>
+
+                    <h3 class="mt-5 section-title">الصيانة المستمرة</h3>
+
+                    <p class="text-muted lh-lg">
+                        لا ينتهي المشروع بعد التنفيذ، بل تبدأ مرحلة الصيانة للحفاظ على جودة الملعب.
+                    </p>
+
+                    <div class="highlight-box">
+                        تشمل الصيانة عمليات تنظيف العشب، فحص أنظمة الصرف، وإعادة توزيع الرمال أو الحبيبات المطاطية.
+                    </div>
+
+                    <div class="mt-5 tags">
+                        <span class="badge">ملاعب</span>
+                        <span class="badge">FIFA</span>
+                        <span class="badge">إنشاءات</span>
+                        <span class="badge">عشب صناعي</span>
+                        <span class="badge">صرف صحي</span>
+                    </div>
+
+                </div>
+                <div class="col-lg-4">
+
+                    <div class="sidebar-box p-4 mb-4">
+                        <h5>عن المقال</h5>
+                        <p class="small text-muted">
+                            شرح تفصيلي لمعايير إنشاء الملاعب الاحترافية في الخليج.
+                        </p>
+                    </div>
+
+                    <div class="sidebar-box p-4">
+                        <h5 class="mb-3">مقالات مشابهة</h5>
+
+                        <div class="related mb-3">
+                            <img src="https://images.unsplash.com/photo-1586831232667-a56886826868">
+                            <div>
+                                <p class="small mb-0">أساسات الخرسانة في الأراضي الرملية</p>
+                            </div>
+                        </div>
+
+                        <div class="related mb-3">
+                            <img src="https://images.unsplash.com/photo-1616678208426-60d03213ca85">
+                            <div>
+                                <p class="small mb-0">مشاريع البنية التحتية الحديثة</p>
+                            </div>
+                        </div>
+
+                        <div class="related">
+                            <img src="https://images.unsplash.com/photo-1680542559974-249f016554e3">
+                            <div>
+                                <p class="small mb-0">تشطيب الواجهات الخارجية</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer-section text-white">
+
+        <div class="container py-5">
+
+            <div class="row g-5">
+                <div class="col-md-4">
+
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <img src="imgs/app_logo.webp" width="36" height="36" alt="logo">
+                        <h5 class="mb-0 fw-bold">أبعاد الكيان المتقدمة</h5>
+                    </div>
+
+                    <p class="text-white-50 small">
+                        مقاولات متكاملة في الخليج — من الأساس حتى التشطيب.
+                    </p>
+
+
+
+                </div>
+                <div class="col-md-4">
+
+                    <h6 class=" mb-3">الخدمات</h6>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="index.html#services" class="footer-link">اعمال اللاند سكيب</a></li>
+                        <li class="mb-3"><a href="index.html#services" class="footer-link">اعمال البنية التحتية</a></li>
+                        <li class="mb-3"><a href="index.html#services" class="footer-link">اعمال العزل</a></li>
+                        <li class="mb-3"><a href="index.html#services" class="footer-link">أعمال الإنشاءات (الهيكل
+                                الخرساني)</a></li>
+                        <li class="mb-3"><a href="index.html#services" class="footer-link">أعمال التشطيب والصيانة</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-md-4">
+                    <h6 class=" mb-3">الشركة</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="index.html#about" class="footer-link">من نحن</a></li>
+                        <li class="mb-3"><a href="index.html#why-us" class="footer-link">لماذا نحن</a></li>
+                        <li class="mb-3"><a href="index.html#blog" class="footer-link">المدونة</a></li>
+                        <li class="mb-3"><a href="index.html#contact" class="footer-link">تواصل معنا</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+
+                <p class="small text-white-50 mb-0">
+                    © 2026 أبعاد الكيان المتقدمة - جميع الحقوق محفوظة
+                </p>
+
+                <div class="d-flex gap-3">
+                    <p>تم التنفيذ بواسطه شركة
+                        <a href="" class="text-warning fw-bold text-decoration-none d-inline-block">GMT WEB</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <a href="https://wa.me/966545645603?text=مرحبا، أريد الاستفسار عن خدماتكم" class="whatsapp-float" target="_blank">
+
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
