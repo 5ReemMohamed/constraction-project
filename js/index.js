@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   const counters = document.querySelectorAll(".counter");
-  const section = document.querySelector("#why-us"); // ✔️ أفضل من bento-card
+  const section = document.querySelector("#why-us");
 
   let started = false;
 
@@ -94,7 +94,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }, {
-    threshold: 0.4
+    threshold: 0,
+    rootMargin: "0px 0px -150px 0px"
   });
 
   if (section) {
@@ -136,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (error) error.remove();
   }
 
-  
+
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const phoneRegex = /^\+?[0-9]{10,15}$/;
 
@@ -151,10 +152,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const service = document.getElementById("service");
     const message = document.getElementById("message");
 
-   
+
     [name, email, phone, service, message].forEach(clearError);
 
-    
+
     if (name.value.trim() === "") {
       showError(name, "الاسم لا يجب أن يكون فارغ");
       valid = false;
@@ -176,7 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
       valid = false;
     }
 
-   
+
     if (service.value.trim() === "") {
       showError(service, "اختر نوع الخدمة");
       valid = false;
@@ -204,23 +205,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.open(url, "_blank");
 
-successMsg.classList.remove("d-none");
-formCard.querySelector("form").style.display = "none";
+    successMsg.classList.remove("d-none");
+    formCard.querySelector("form").style.display = "none";
 
 
-setTimeout(() => {
+    setTimeout(() => {
 
-  successMsg.style.opacity = "0";
+      successMsg.style.opacity = "0";
 
-  setTimeout(() => {
-    successMsg.classList.add("d-none");
-    successMsg.style.opacity = "1";
+      setTimeout(() => {
+        successMsg.classList.add("d-none");
+        successMsg.style.opacity = "1";
 
-    formCard.querySelector("form").style.display = "block";
-    form.reset();
+        formCard.querySelector("form").style.display = "block";
+        form.reset();
 
-  }, 500);
+      }, 500);
 
-}, 12000);
+    }, 12000);
   });
 });
