@@ -563,8 +563,9 @@ body {
 
 .hero-bg {
     position: absolute;
-    inset: 0;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 .hero-bg-img {
@@ -582,6 +583,7 @@ body {
             rgba(15, 26, 16, 0.95),
             rgba(15, 26, 16, 0.4),
             transparent);
+
 }
 
 .hero-top-gradient {
@@ -759,21 +761,43 @@ body {
     font-weight: 600;
 }
 
-.timeline {
+html[dir="ltr"] .floating-card {
+    left: -20px;
+}
+
+html[dir="rtl"] .timeline {
     border-right: 2px solid var(--cp-border);
     padding-right: 20px;
+    margin-top: 25px;
+}
+
+html[dir="ltr"] .timeline {
+    border-left: 2px solid var(--cp-border);
+    padding-left: 20px;
     margin-top: 25px;
 }
 
 .timeline-item {
     position: relative;
     margin-bottom: 40px;
+    padding: 10px 30px;
 }
 
-.timeline-item::before {
+html[dir="rtl"] .timeline-item::before {
     content: "";
     position: absolute;
     right: -26px;
+    top: 25px;
+    width: 10px;
+    height: 10px;
+    background: var(--cp-gold);
+    border-radius: 50%;
+}
+
+html[dir="ltr"] .timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -26px;
     top: 25px;
     width: 10px;
     height: 10px;
@@ -803,6 +827,7 @@ body {
     gap: 10px;
     align-items: start;
 }
+
 
 .icon-box {
     width: 40px;
@@ -1094,6 +1119,11 @@ footer h6 {
     position: relative;
 }
 
+.phone {
+    direction: ltr !important;
+    unicode-bidi: bidi-override;
+}
+
 .blog-hero .overlay {
     position: absolute;
     inset: 0;
@@ -1194,39 +1224,92 @@ footer h6 {
     padding: 8px 12px;
     border-radius: 20px;
 }
+
 .whatsapp-float {
-  position: fixed;
-  bottom: 25px;
-  left: 25px; /* غيريها right لو عايزاه يمين */
-  width: 60px;
-  height: 60px;
-  background: #25d366;
-  color: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 28px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-  z-index: 9999;
-  transition: 0.3s;
-  text-decoration: none;
-  animation: pulse 1.5s infinite;
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    /* غيريها right لو عايزاه يمين */
+    width: 60px;
+    height: 60px;
+    background: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    transition: 0.3s;
+    text-decoration: none;
+    animation: pulse 1.5s infinite;
 }
 
 .whatsapp-float:hover {
-  transform: scale(1.1);
-  color: #fff;
+    transform: scale(1.1);
+    color: #fff;
 }
 
 @keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
-  }
-  70% {
-    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-  }
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+.lang-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    background: var(--cp-forest-mid);
+    color: var(--cp-cream);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+html[dir="rtl"] .fa-arrow-alt-circle-left {
+    display: block;
+}
+
+html[dir="rtl"] .fa-arrow-alt-circle-right {
+    display: none;
+}
+
+html[dir="ltr"] .fa-arrow-alt-circle-left {
+    display: none;
+}
+
+html[dir="ltr"] .fa-arrow-alt-circle-right {
+    display: block;
+}
+
+#thumbContainer img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 8px;
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+#thumbContainer img.active {
+    border: 2px solid #C8A96E;
+    opacity: 1;
+}
+
+html[dir="rtl"] .modal-header .btn-close {
+    margin: 0;
 }
