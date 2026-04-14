@@ -851,7 +851,7 @@ html[dir="ltr"] .timeline-item::before {
 
 .service-card {
     position: relative;
-    height: 380px;
+    height: 450px;
     border-radius: 25px;
     overflow: hidden;
     cursor: pointer;
