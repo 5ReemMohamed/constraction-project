@@ -202,6 +202,7 @@ body {
     opacity: 0;
     transition: opacity 0.2s 0.1s;
     font-family: 'JetBrains Mono', monospace;
+    
 }
 
 #cp-cursor.active span {
@@ -287,7 +288,9 @@ body {
 .nav-blur .gold-link {
     color: var(--cp-forest-deep);
 }
-
+.nav-blur .logo-text{
+    color: var(--cp-forest-deep) !important;
+}
 .gold-link:hover::after {
     width: 100%;
 }
@@ -617,6 +620,8 @@ body {
     font-size: 14px;
     color: var(--cp-gold);
     text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
 }
 
 .hero-title {
@@ -717,7 +722,7 @@ body {
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
-    color: var(--cp-gold);
+    color: var(--cp-forest-deep);
 }
 
 
@@ -728,11 +733,14 @@ body {
 }
 
 .about-title span {
-    color: var(--cp-stone);
+    color: var(--cp-forest);
     font-style: italic;
     font-weight: 700;
 }
-
+.text-primary{
+    color: var(--cp-forest) !important;
+    font-weight: 700;
+}
 .about-text {
     color: var(--cp-stone);
     margin-bottom: 15px;
@@ -1181,7 +1189,13 @@ footer h6 {
     color: #333;
     font-size: 15px;
 }
-
+html[dir="ltr"] .highlight-box,html[dir="ltr"] .section-title{
+    border-right: none;
+    border-left: 4px solid var(--cp-gold-dark);
+}
+html[dir="ltr"] .section-title{
+    padding-left: 10px;
+}
 .quote-box {
     background: var(--cp-forest);
     color: var(--cp-cream);
@@ -1200,7 +1214,11 @@ footer h6 {
     right: 10px;
     color: var(--cp-gold-dark);
 }
+html[dir="ltr"] .quote-box::before {
+        right: 0;
+        left: 10px;
 
+}
 .custom-list {
     padding-right: 20px;
     color: #555;
@@ -1312,4 +1330,48 @@ html[dir="ltr"] .fa-arrow-alt-circle-right {
 
 html[dir="rtl"] .modal-header .btn-close {
     margin: 0;
+}
+
+
+.company-profile-section {
+    background: linear-gradient(135deg, #0f1a10c0, #1c2b1e94),url(../imgs/CTAbg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Glow effect */
+.company-profile-section::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: var(--cp-gold-dark);
+    filter: blur(120px);
+    opacity: 0.2;
+    top: -100px;
+    right: -100px;
+}
+
+.profile-box {
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+/* Button */
+.download-btn {
+    background: #c8a96e;
+    color: #0f1a10;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background: #e2c98a;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }

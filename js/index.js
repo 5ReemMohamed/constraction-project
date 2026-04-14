@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  // ================= MOBILE MENU =================
   const menuBtn = document.getElementById("menuBtn");
   const closeMenu = document.getElementById("closeMenu");
   const mobileMenu = document.getElementById("mobileMenu");
@@ -37,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // ================= REVEAL =================
   const revealElements = document.querySelectorAll(".reveal, .reveal-left, .reveal-right");
 
   const revealObserver = new IntersectionObserver((entries) => {
@@ -50,7 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   revealElements.forEach(el => revealObserver.observe(el));
 
-  // ================= HERO PARALLAX =================
   const heroImg = document.querySelector(".hero-bg-img");
 
   window.addEventListener("scroll", () => {
@@ -60,7 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // ================= COUNTERS =================
   const counters = document.querySelectorAll(".counter");
   const section = document.querySelector("#why-us");
   let started = false;
@@ -100,7 +96,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (section) counterObserver.observe(section);
 
-  // ================= BLOG SCROLL =================
   const scrollContainer = document.getElementById("blogScroll");
 
   document.getElementById("scrollLeft")?.addEventListener("click", () => {
@@ -111,7 +106,6 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollContainer.scrollBy({ left: 320, behavior: "smooth" });
   });
 
-  // ================= CONTACT FORM =================
   const form = document.getElementById("contactForm");
   const successMsg = document.getElementById("successMsg");
   const formCard = document.getElementById("formCard");
@@ -213,13 +207,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 12000);
   });
 
-  // ================= LANGUAGE SYSTEM =================
   const savedLang = localStorage.getItem("lang") || "ar";
   setLanguage(savedLang);
 });
 
-
-// ================= GLOBAL LANGUAGE =================
 window.setLanguage = function (lang) {
 
   const html = document.documentElement;
@@ -239,8 +230,6 @@ window.setLanguage = function (lang) {
   if (btn) btn.innerText = lang === "ar" ? "EN" : "AR";
 
   localStorage.setItem("lang", lang);
-
-  // 🔥 update modal title if open
   updateServiceModalLanguage();
 };
 
@@ -251,7 +240,6 @@ window.toggleLang = function () {
 };
 
 
-// ================= SERVICE MODAL =================
 const serviceData = {
   landscaping: {
     title: { ar: "أعمال اللاند سكيب", en: "Landscaping Works" },
@@ -265,9 +253,7 @@ const serviceData = {
       "../imgs/landscape-8.jpg",
       "../imgs/landscape-9.jpg",
       "../imgs/landscape-10.jpg",
-      "../imgs/landscape-11.jpg",
       "../imgs/landscape-12.jpg",
-      "../imgs/landscape-13.jpg",
       "../imgs/landscape-14.jpg",
       "../imgs/landscape-14.webp",
       "../imgs/landscape-15.jpeg",
@@ -364,7 +350,6 @@ let currentIndex = 0;
 let currentImages = [];
 let currentServiceKey = null;
 
-// فتح المودال
 function openService(key) {
 
   currentServiceKey = key;
@@ -384,7 +369,6 @@ function openService(key) {
   modal.show();
 }
 
-// تحديث الصورة
 function updateImage() {
   document.getElementById("modalImage").src = currentImages[currentIndex];
 
@@ -393,7 +377,6 @@ function updateImage() {
   });
 }
 
-// thumbnails
 function renderThumbs() {
   const container = document.getElementById("thumbContainer");
   if (!container) return;
@@ -409,9 +392,14 @@ function renderThumbs() {
     };
     container.appendChild(el);
   });
-}
 
-// next / prev
+}
+  AOS.init({
+    duration: 1000,
+    once: false,
+    offset: 100
+  });
+
 document.getElementById("nextImg")?.addEventListener("click", () => {
   currentIndex = (currentIndex + 1) % currentImages.length;
   updateImage();
@@ -421,8 +409,6 @@ document.getElementById("prevImg")?.addEventListener("click", () => {
   currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
   updateImage();
 });
-
-// update modal language live
 function updateServiceModalLanguage() {
   if (!currentServiceKey) return;
 

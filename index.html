@@ -31,6 +31,7 @@
     <meta property="og:description"
         content="شركة مقاولات متكاملة تقدم خدمات البناء والبنية التحتية واللاندسكيب في السعودية.">
     <meta property="og:image" content="https://yourdomain.com/imgs/logo.jpg">
+    <link rel="icon" href="imgs/logo.jpg" type="image/png">
     <meta property="og:url" content="https://yourdomain.com">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="ar_AR">
@@ -62,11 +63,13 @@
             <a href="index.html" class="d-flex align-items-center text-decoration-none">
                 <img src="imgs/logo.jpg" width="58" alt="" class="rounded mx-2">
 
-                <span class="ms-2 fw-semibold font-display logo-text d-block"
-                    style="color: var(--cp-gold); font-size: 24px;" data-ar="أبعاد الكيان المتقدمة"
-                    data-en="abead alkian almutaqadima">
-                    أبعاد الكيان المتقدمة
-                </span>
+                <div class="d-flex flex-column gap-0">
+                    <span class="ms-2 fw-semibold font-display logo-text d-block"
+                        style="color: var(--cp-cream); font-size: 34px;" data-ar="أبعاد الكيان المتقدمة"
+                        data-en="abead alkian almutaqadima">
+                        أبعاد الكيان المتقدمة
+                    </span>
+                </div>
             </a>
 
             <nav class="d-none d-lg-flex align-items-center gap-4">
@@ -109,9 +112,9 @@
     <div id="mobileMenu" class="mobile-menu d-flex flex-column">
         <div class="d-flex justify-content-between align-items-center p-4 border-bottom border-light">
             <div class="d-flex align-items-center gap-2">
-                 <img src="imgs/logo.jpg" width="58" alt="" class="rounded mx-2">
+                <img src="imgs/logo.jpg" width="58" alt="" class="rounded mx-2">
                 <span class="text-white fw-bold font-display" data-ar="أبعاد الكيان المتقدمة"
-                    data-en="abead alkian almutaqadima">
+                    data-en="abead alkian almutaqadima" style="font-size: 34px;">
                     أبعاد الكيان المتقدمة
                 </span>
             </div>
@@ -239,7 +242,7 @@
                                 class="img-fluid w-100 grayscale-hover">
                         </div>
 
-                       
+
 
                     </div>
                 </div>
@@ -261,10 +264,10 @@
                         </p>
 
                         <p class="about-text"
-                            data-ar="اليوم تخدم أقسامنا الخمسة المتخصصة المطورين والجهات الحكومية والعملاء داخل المملكة العربية السعودية فقط."
-                            data-en="Today, our five specialized divisions serve developers, government entities, and clients exclusively within Saudi Arabia.">
+                            data-ar="اليوم تخدم أقسامنا الخمسة المتخصصة المطورين والجهات الحكومية والعملاء داخل المملكة العربية السعودية ."
+                            data-en="Today, our five specialized divisions serve developers, government entities, and clients within Saudi Arabia.">
                             اليوم تخدم أقسامنا الخمسة المتخصصة المطورين والجهات الحكومية والعملاء
-                            داخل المملكة العربية السعودية فقط.
+                            داخل المملكة العربية السعودية .
                         </p>
                     </div>
 
@@ -383,10 +386,10 @@
     <section id="services" class="py-5 bg-light service-section">
         <div class="container">
 
-            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5" data-aos="fade-up">
 
                 <div>
-                    <span class="text-uppercase text-warning d-block mb-2" data-ar="خبراتنا" data-en="Our Expertise">
+                    <span class="text-uppercase text-primary d-block mb-2" data-ar="خبراتنا" data-en="Our Expertise">
                         خبراتنا
                     </span>
 
@@ -407,7 +410,7 @@
             </div>
 
             <div class="row g-4">
-                <div class="col-lg-8">
+                <div class="col-lg-8" data-aos="fade-up">
                     <div class="service-card" onclick="openService('landscaping')">
 
                         <img src="imgs/landscape-1.jpg" class="img-fluid w-100 h-100 object-fit-cover">
@@ -436,8 +439,9 @@
                                     تصميم وتنفيذ الحدائق
                                 </span>
 
-                                <span data-ar="تصميم وتنفيذ ارضيات مطاطية واكليريك" data-en="Rubber & acrylic flooring">
-                                    تصميم وتنفيذ ارضيات مطاطية واكليريك
+                                <span data-ar="تصميم وتنفيذ ارضيات مطاطية والأكريليك"
+                                    data-en="Rubber & acrylic flooring">
+                                    تصميم وتنفيذ ارضيات مطاطية والأكريليك
                                 </span>
 
                                 <span data-ar="اعمال البلدورات والإنترلوك" data-en="Curb stones & interlock works">
@@ -461,7 +465,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
                     <div class="service-card" onclick="openService('infrastructure')">
 
                         <img src="imgs/infrastruction-9.jpg" class="img-fluid w-100 h-100 object-fit-cover">
@@ -509,7 +513,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
                     <div class="service-card" onclick="openService('insulation')">
 
                         <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1da591c81-1769499136631.png"
@@ -546,7 +550,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8">
+                <div class="col-lg-8" data-aos="fade-up">
                     <div class="service-card" onclick="openService('construction')">
 
                         <img src="https://img.rocket.new/generatedImages/rocket_gen_img_170d37759-1765093092088.png"
@@ -586,7 +590,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-8">
+                <div class="col-md-6 col-lg-8" data-aos="fade-up">
                     <div class="service-card" onclick="openService('finishing')">
 
                         <img src="https://img.rocket.new/generatedImages/rocket_gen_img_11d49fe7d-1775735742056.png"
@@ -625,18 +629,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
                     <div class="cta-card text-white p-4 h-100 d-flex flex-column justify-content-between">
 
                         <div>
-                            <span class="text-warning small" data-ar="جاهز تبدأ مشروعك؟"
+                            <span class="text-white fw-bold d-inline-block small" data-ar="جاهز تبدأ مشروعك؟"
                                 data-en="Ready to start your project?">
                                 جاهز تبدأ مشروعك؟
                             </span>
 
-                            <h4 class="mt-3" data-ar="ابدأ مشروعك معانا النهاردة"
-                                data-en="Start your project with us today">
-                                ابدأ مشروعك معانا النهاردة
+                            <h4 class="mt-3" data-ar="ابدأ مشروعك معانا " data-en="Start your project with us ">
+                                ابدأ مشروعك معانا
                             </h4>
                         </div>
 
@@ -664,8 +667,8 @@
 
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5">
 
-                <div>
-                    <span class="text-warning fw-bold d-block mb-2" data-ar="لماذا نحن" data-en="Why Us">
+                <div data-aos="fade-left">
+                    <span class="text-white fw-bold d-block mb-2" data-ar="لماذا نحن" data-en="Why Us">
                         لماذا نحن
                     </span>
 
@@ -677,7 +680,7 @@
                     </h2>
                 </div>
 
-                <p class="text-white-50 mt-3 mt-md-0" style="max-width: 350px;"
+                <p data-aos="fade-right" class="text-white-50 mt-3 mt-md-0" style="max-width: 350px;"
                     data-ar="نحن لا ننفذ المشاريع فقط، بل نبني سمعة قوية. إليك ما يجعلنا الخيار الأول لعملائنا."
                     data-en="We don’t just execute projects, we build a strong reputation. Here’s why we are the top choice for our clients.">
                     نحن لا ننفذ المشاريع فقط، بل نبني سمعة قوية. إليك ما يجعلنا الخيار الأول لعملائنا.
@@ -686,10 +689,8 @@
             </div>
 
             <div class="row g-3 align-items-center">
-
-                <!-- Counters -->
                 <div class="col-12">
-                    <div class="bento-card p-0">
+                    <div class="bento-card p-0" data-aos="fade-left">
 
                         <div class="row g-0 text-center">
 
@@ -718,7 +719,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="bento-card p-4 h-100 text-center">
+                    <div class="bento-card p-4 h-100 text-center" data-aos="fade-left">
 
                         <div class="icon-box mb-3 mx-auto">
                             <i class="fas fa-layer-group"></i>
@@ -737,7 +738,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="bento-card p-4 h-100 text-center">
+                    <div class="bento-card p-4 h-100 text-center" data-aos="fade-left">
 
                         <div class="icon-box mb-3 mx-auto">
                             <i class="fas fa-chart-line"></i>
@@ -755,7 +756,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="bento-card p-4 h-100 text-center">
+                    <div class="bento-card p-4 h-100 text-center" data-aos="fade-right">
 
                         <div class="icon-box mb-3 mx-auto">
                             <i class="fas fa-screwdriver-wrench"></i>
@@ -773,7 +774,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="bento-card p-4 h-100 text-center">
+                    <div class="bento-card p-4 h-100 text-center" data-aos="fade-right">
 
                         <div class="icon-box mb-3 mx-auto">
                             <i class="fas fa-shield-halved"></i>
@@ -796,11 +797,36 @@
         </div>
 
     </section>
+    <section class="py-5 company-profile-section text-white">
+        <div class="container">
+
+            <div class="profile-box text-center p-5 rounded-4" data-aos="fade-right">
+
+                <h2 class="fw-bold mb-3" data-ar="حمّل ملف بروفايل الشركة" data-en="Download Company Profile">
+                    حمّل ملف بروفايل الشركة
+                </h2>
+
+                <p class="text-white fw-semibold mb-4"
+                    data-ar="تعرف على خدماتنا، مشاريعنا، وخبراتنا في مجال المقاولات والبنية التحتية"
+                    data-en="Discover our services, projects, and expertise in construction and infrastructure">
+                    تعرف على خدماتنا، مشاريعنا، وخبراتنا في مجال المقاولات والبنية التحتية
+                </p>
+
+                <a href="files/company-profile.pdf" class="btn download-btn px-4 py-2 fw-bold" download>
+                    <span data-ar="تحميل الملف" data-en="Download File"> تحميل الملف</span>
+                    <i class="fas fa-download me-2"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+    </section>
     <section id="blog" class="blog-section overflow-hidden">
         <div class="container">
             <div class="d-flex justify-content-between align-items-end mb-4 flex-wrap gap-3">
                 <div class="reveal">
-                    <span class="text-warning fw-bolder text-uppercase d-block mb-2" data-ar="رؤى ومعرفة"
+                    <span class="text-primary fw-bolder text-uppercase d-block mb-2" data-ar="رؤى ومعرفة"
                         data-en="Insights & Knowledge">
                         رؤى ومعرفة
                     </span>
@@ -827,7 +853,7 @@
 
         </div>
 
-        <div id="blogScroll" class="d-flex gap-3 overflow-auto px-3 pb-3">
+        <div id="blogScroll" class="d-flex gap-3 overflow-auto px-3 pb-3" data-aos="fade-up">
 
             <div class="blog-card">
 
@@ -854,7 +880,7 @@
                         تطور هندسة محطات التحلية جعل المشاريع أسرع وأكثر كفاءة.
                     </p>
 
-                    <a href="blog-details.html" class="text-warning text-decoration-none fw-bold">
+                    <a href="blog-details.html" class="text-primary text-decoration-none fw-bold">
                         <span data-ar="اقرأ المقال" data-en="Read Article"> اقرأ المقال</span>
                         <i class="fas fa-arrow-alt-circle-left"></i>
                         <i class="fas fa-arrow-alt-circle-right"></i>
@@ -863,263 +889,138 @@
                 </div>
             </div>
             <div class="blog-card">
-
-                <img src="https://images.unsplash.com/photo-1700730401321-e92ec769d928">
-
+                <img src="imgs/infrastruction-9.jpg">
                 <div class="p-3">
+                    <span class="badge bg-dark mb-2" data-ar="البنية التحتية" data-en="Infrastructure">البنية
+                        التحتية</span>
 
-                    <span class="badge bg-dark mb-2" data-ar="الملاعب" data-en="Sports Fields">
-                        الملاعب
-                    </span>
-
-                    <div class="small text-muted mb-2" data-ar="12 مارس 2026 • 5 دقائق"
-                        data-en="12 March 2026 • 5 min read">
-                        12 مارس 2026 • 5 دقائق
+                    <div class="small text-muted mb-2" data-ar="5 أبريل 2026 • 6 دقائق"
+                        data-en="5 April 2026 • 6 min read">
+                        5 أبريل 2026 • 6 دقائق
                     </div>
 
-                    <h5 class="fw-bold" data-ar="معايير ملاعب FIFA" data-en="FIFA stadium standards">
-                        معايير ملاعب FIFA
+                    <h5 class="fw-bold" data-ar="أهم معايير تنفيذ شبكات الصرف الحديثة"
+                        data-en="Key Standards for Modern Drainage Systems">
+                        أهم معايير تنفيذ شبكات الصرف الحديثة
                     </h5>
 
-                    <p class="small text-muted" data-ar="كل ما تحتاج معرفته عن تصميم الملاعب الاحترافية."
-                        data-en="Everything you need to know about professional stadium design.">
-                        كل ما تحتاج معرفته عن تصميم الملاعب الاحترافية.
+                    <p class="small text-muted" data-ar="تعرف على أفضل الطرق لتنفيذ شبكات الصرف بكفاءة عالية."
+                        data-en="Learn the best practices for efficient drainage system implementation.">
+                        تعرف على أفضل الطرق لتنفيذ شبكات الصرف بكفاءة عالية.
                     </p>
-
-                    <a href="blog-details.html" class="text-warning text-decoration-none fw-bold">
+                    <a href="blog-details-2.html" class="text-primary text-decoration-none fw-bold">
                         <span data-ar="اقرأ المقال" data-en="Read Article"> اقرأ المقال</span>
                         <i class="fas fa-arrow-alt-circle-left"></i>
                         <i class="fas fa-arrow-alt-circle-right"></i>
                     </a>
-
-                </div>
-            </div>
-            <div class="blog-card">
-
-                <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1da591c81-1769499136631.png">
-
-                <div class="p-3">
-
-                    <span class="badge bg-dark mb-2" data-ar="العزل" data-en="Insulation">
-                        العزل
-                    </span>
-
-                    <div class="small text-muted mb-2" data-ar="24 فبراير 2026 • 7 دقائق"
-                        data-en="24 February 2026 • 7 min read">
-                        24 فبراير 2026 • 7 دقائق
-                    </div>
-
-                    <h5 class="fw-bold" data-ar="أهمية العزل الحراري" data-en="Importance of thermal insulation">
-                        أهمية العزل الحراري
-                    </h5>
-
-                    <p class="small text-muted" data-ar="تقليل استهلاك الطاقة وتحسين كفاءة المباني."
-                        data-en="Reducing energy consumption and improving building efficiency.">
-                        تقليل استهلاك الطاقة وتحسين كفاءة المباني.
-                    </p>
-
-                    <a href="blog-details.html" class="text-warning text-decoration-none fw-bold">
-                        <span data-ar="اقرأ المقال" data-en="Read Article"> اقرأ المقال</span>
-                        <i class="fas fa-arrow-alt-circle-left"></i>
-                        <i class="fas fa-arrow-alt-circle-right"></i>
-                    </a>
-
-                </div>
-            </div>
-            <div class="blog-card">
-
-                <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1d3bb6f2a-1773147671823.png">
-
-                <div class="p-3">
-
-                    <span class="badge bg-dark mb-2" data-ar="البنية التحتية" data-en="Infrastructure">
-                        البنية التحتية
-                    </span>
-
-                    <div class="small text-muted mb-2" data-ar="28 مارس 2026 • 6 دقائق"
-                        data-en="28 March 2026 • 6 min read">
-                        28 مارس 2026 • 6 دقائق
-                    </div>
-
-                    <h5 class="fw-bold" data-ar="كيف تطورت محطات تحلية المياه"
-                        data-en="How desalination plants evolved">
-                        كيف تطورت محطات تحلية المياه
-                    </h5>
-
-                    <p class="small text-muted" data-ar="تطور هندسة محطات التحلية جعل المشاريع أسرع وأكثر كفاءة."
-                        data-en="Advances in desalination engineering have made projects faster and more efficient.">
-                        تطور هندسة محطات التحلية جعل المشاريع أسرع وأكثر كفاءة.
-                    </p>
-
-                    <a href="blog-details.html" class="text-warning text-decoration-none fw-bold">
-                        <span data-ar="اقرأ المقال" data-en="Read Article"> اقرأ المقال</span>
-                        <i class="fas fa-arrow-alt-circle-left"></i>
-                        <i class="fas fa-arrow-alt-circle-right"></i>
-                    </a>
-
                 </div>
             </div>
 
             <div class="blog-card">
-
-                <img src="https://images.unsplash.com/photo-1700730401321-e92ec769d928">
-
+                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
                 <div class="p-3">
+                    <span class="badge bg-dark mb-2" data-ar="الإنشاءات" data-en="Construction">الإنشاءات</span>
 
-                    <span class="badge bg-dark mb-2" data-ar="الملاعب" data-en="Sports Fields">
-                        الملاعب
-                    </span>
-
-                    <div class="small text-muted mb-2" data-ar="12 مارس 2026 • 5 دقائق"
-                        data-en="12 March 2026 • 5 min read">
-                        12 مارس 2026 • 5 دقائق
+                    <div class="small text-muted mb-2" data-ar="2 أبريل 2026 • 5 دقائق"
+                        data-en="2 April 2026 • 5 min read">
+                        2 أبريل 2026 • 5 دقائق
                     </div>
 
-                    <h5 class="fw-bold" data-ar="معايير ملاعب FIFA" data-en="FIFA stadium standards">
-                        معايير ملاعب FIFA
+                    <h5 class="fw-bold" data-ar="مراحل تنفيذ الهيكل الخرساني خطوة بخطوة"
+                        data-en="Steps of Concrete Structure Execution">
+                        مراحل تنفيذ الهيكل الخرساني خطوة بخطوة
                     </h5>
 
-                    <p class="small text-muted" data-ar="كل ما تحتاج معرفته عن تصميم الملاعب الاحترافية."
-                        data-en="Everything you need to know about professional stadium design.">
-                        كل ما تحتاج معرفته عن تصميم الملاعب الاحترافية.
+                    <p class="small text-muted" data-ar="دليل شامل لتنفيذ الأعمال الخرسانية بجودة عالية."
+                        data-en="A complete guide to high-quality concrete construction.">
+                        دليل شامل لتنفيذ الأعمال الخرسانية بجودة عالية.
                     </p>
-
-                    <a href="blog-details.html" class="text-warning text-decoration-none fw-bold">
+                    <a href="blog-details-3.html" class="text-primary text-decoration-none fw-bold">
                         <span data-ar="اقرأ المقال" data-en="Read Article"> اقرأ المقال</span>
                         <i class="fas fa-arrow-alt-circle-left"></i>
                         <i class="fas fa-arrow-alt-circle-right"></i>
                     </a>
-
-                </div>
-            </div>
-            <div class="blog-card">
-
-                <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1da591c81-1769499136631.png">
-
-                <div class="p-3">
-
-                    <span class="badge bg-dark mb-2" data-ar="العزل" data-en="Insulation">
-                        العزل
-                    </span>
-
-                    <div class="small text-muted mb-2" data-ar="24 فبراير 2026 • 7 دقائق"
-                        data-en="24 February 2026 • 7 min read">
-                        24 فبراير 2026 • 7 دقائق
-                    </div>
-
-                    <h5 class="fw-bold" data-ar="أهمية العزل الحراري" data-en="Importance of thermal insulation">
-                        أهمية العزل الحراري
-                    </h5>
-
-                    <p class="small text-muted" data-ar="تقليل استهلاك الطاقة وتحسين كفاءة المباني."
-                        data-en="Reducing energy consumption and improving building efficiency.">
-                        تقليل استهلاك الطاقة وتحسين كفاءة المباني.
-                    </p>
-                    <a href="blog-details.html" class="text-warning text-decoration-none fw-bold">
-                        <span data-ar="اقرأ المقال" data-en="Read Article"> اقرأ المقال</span>
-                        <i class="fas fa-arrow-alt-circle-left"></i>
-                        <i class="fas fa-arrow-alt-circle-right"></i>
-                    </a>
-
-                </div>
-            </div>
-            <div class="blog-card">
-
-                <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1d3bb6f2a-1773147671823.png">
-
-                <div class="p-3">
-
-                    <span class="badge bg-dark mb-2" data-ar="البنية التحتية" data-en="Infrastructure">
-                        البنية التحتية
-                    </span>
-
-                    <div class="small text-muted mb-2" data-ar="28 مارس 2026 • 6 دقائق"
-                        data-en="28 March 2026 • 6 min read">
-                        28 مارس 2026 • 6 دقائق
-                    </div>
-
-                    <h5 class="fw-bold" data-ar="كيف تطورت محطات تحلية المياه"
-                        data-en="How desalination plants evolved">
-                        كيف تطورت محطات تحلية المياه
-                    </h5>
-
-                    <p class="small text-muted" data-ar="تطور هندسة محطات التحلية جعل المشاريع أسرع وأكثر كفاءة."
-                        data-en="Advances in desalination engineering have made projects faster and more efficient.">
-                        تطور هندسة محطات التحلية جعل المشاريع أسرع وأكثر كفاءة.
-                    </p>
-
-                    <a href="blog-details.html" class="text-warning text-decoration-none fw-bold">
-                        <span data-ar="اقرأ المقال" data-en="Read Article"> اقرأ المقال</span>
-                        <i class="fas fa-arrow-alt-circle-left"></i>
-                        <i class="fas fa-arrow-alt-circle-right"></i>
-                    </a>
-
                 </div>
             </div>
 
             <div class="blog-card">
-
-                <img src="https://images.unsplash.com/photo-1700730401321-e92ec769d928">
-
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
                 <div class="p-3">
+                    <span class="badge bg-dark mb-2" data-ar="التشطيبات" data-en="Finishing">التشطيبات</span>
 
-                    <span class="badge bg-dark mb-2" data-ar="الملاعب" data-en="Sports Fields">
-                        الملاعب
-                    </span>
-
-                    <div class="small text-muted mb-2" data-ar="12 مارس 2026 • 5 دقائق"
-                        data-en="12 March 2026 • 5 min read">
-                        12 مارس 2026 • 5 دقائق
+                    <div class="small text-muted mb-2" data-ar="30 مارس 2026 • 4 دقائق"
+                        data-en="30 March 2026 • 4 min read">
+                        30 مارس 2026 • 4 دقائق
                     </div>
 
-                    <h5 class="fw-bold" data-ar="معايير ملاعب FIFA" data-en="FIFA stadium standards">
-                        معايير ملاعب FIFA
+                    <h5 class="fw-bold" data-ar="أحدث اتجاهات تشطيب الواجهات الخارجية"
+                        data-en="Latest Trends in Exterior Finishing">
+                        أحدث اتجاهات تشطيب الواجهات الخارجية
                     </h5>
 
-                    <p class="small text-muted" data-ar="كل ما تحتاج معرفته عن تصميم الملاعب الاحترافية."
-                        data-en="Everything you need to know about professional stadium design.">
-                        كل ما تحتاج معرفته عن تصميم الملاعب الاحترافية.
+                    <p class="small text-muted" data-ar="تعرف على أحدث المواد والتقنيات في التشطيبات."
+                        data-en="Discover the latest materials and techniques in finishing.">
+                        تعرف على أحدث المواد والتقنيات في التشطيبات.
                     </p>
-
-                    <a href="blog-details.html" class="text-warning text-decoration-none fw-bold">
+                    <a href="blog-details-4.html" class="text-primary text-decoration-none fw-bold">
                         <span data-ar="اقرأ المقال" data-en="Read Article"> اقرأ المقال</span>
                         <i class="fas fa-arrow-alt-circle-left"></i>
                         <i class="fas fa-arrow-alt-circle-right"></i>
                     </a>
-
                 </div>
             </div>
 
             <div class="blog-card">
-
-                <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1da591c81-1769499136631.png">
-
+                <img src="imgs/insulation-12.jpg">
                 <div class="p-3">
+                    <span class="badge bg-dark mb-2" data-ar="العزل" data-en="Insulation">العزل</span>
 
-                    <span class="badge bg-dark mb-2" data-ar="العزل" data-en="Insulation">
-                        العزل
-                    </span>
-
-                    <div class="small text-muted mb-2" data-ar="24 فبراير 2026 • 7 دقائق"
-                        data-en="24 February 2026 • 7 min read">
-                        24 فبراير 2026 • 7 دقائق
+                    <div class="small text-muted mb-2" data-ar="25 مارس 2026 • 5 دقائق"
+                        data-en="25 March 2026 • 5 min read">
+                        25 مارس 2026 • 5 دقائق
                     </div>
 
-                    <h5 class="fw-bold" data-ar="أهمية العزل الحراري" data-en="Importance of thermal insulation">
-                        أهمية العزل الحراري
+                    <h5 class="fw-bold" data-ar="أنواع العزل المائي وأفضل استخداماتها"
+                        data-en="Types of Waterproofing and Their Uses">
+                        أنواع العزل المائي وأفضل استخداماتها
                     </h5>
 
-                    <p class="small text-muted" data-ar="تقليل استهلاك الطاقة وتحسين كفاءة المباني."
-                        data-en="Reducing energy consumption and improving building efficiency.">
-                        تقليل استهلاك الطاقة وتحسين كفاءة المباني.
+                    <p class="small text-muted" data-ar="اختيار نوع العزل المناسب يحمي المباني لسنوات."
+                        data-en="Choosing the right insulation protects buildings for years.">
+                        اختيار نوع العزل المناسب يحمي المباني لسنوات.
                     </p>
-
-                    <a href="blog-details.html" class="text-warning text-decoration-none fw-bold">
+                    <a href="blog-details-5.html" class="text-primary text-decoration-none fw-bold">
                         <span data-ar="اقرأ المقال" data-en="Read Article"> اقرأ المقال</span>
                         <i class="fas fa-arrow-alt-circle-left"></i>
                         <i class="fas fa-arrow-alt-circle-right"></i>
                     </a>
+                </div>
+            </div>
 
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1511884642898-4c92249e20b6">
+                <div class="p-3">
+                    <span class="badge bg-dark mb-2" data-ar="اللاند سكيب" data-en="Landscaping">اللاند سكيب</span>
+
+                    <div class="small text-muted mb-2" data-ar="20 مارس 2026 • 4 دقائق"
+                        data-en="20 March 2026 • 4 min read">
+                        20 مارس 2026 • 4 دقائق
+                    </div>
+
+                    <h5 class="fw-bold" data-ar="تصميم المساحات الخضراء في المشاريع الحديثة"
+                        data-en="Designing Green Spaces in Modern Projects">
+                        تصميم المساحات الخضراء في المشاريع الحديثة
+                    </h5>
+
+                    <p class="small text-muted" data-ar="اللاند سكيب عنصر أساسي في تحسين جودة الحياة."
+                        data-en="Landscaping is key to improving quality of life.">
+                        اللاند سكيب عنصر أساسي في تحسين جودة الحياة.
+                    </p>
+                    <a href="blog-details-6.html" class="text-primary text-decoration-none fw-bold">
+                        <span data-ar="اقرأ المقال" data-en="Read Article"> اقرأ المقال</span>
+                        <i class="fas fa-arrow-alt-circle-left"></i>
+                        <i class="fas fa-arrow-alt-circle-right"></i>
+                    </a>
                 </div>
             </div>
 
@@ -1127,20 +1028,20 @@
         </div>
 
     </section>
+
     <section id="contact" class="contact-section">
 
         <div class="container">
 
-            <div class="text-center mb-5">
+            <div class="text-center mb-5" data-aos="zoom-in">
 
-                <span class="text-warning small text-uppercase d-block mb-2" data-ar="ابدأ مشروعك"
+                <span class="text-white fw-bold small text-uppercase d-block mb-2" data-ar="ابدأ مشروعك"
                     data-en="Start Your Project">
                     ابدأ مشروعك
                 </span>
 
                 <h2 class="display-4 fw-bold text-white">
                     <span data-ar="لنبدأ" data-en="Let's start">لنبدأ</span>
-                    <br>
                     <span data-ar="مشروع يدوم" data-en="a lasting project">مشروع يدوم</span>
                 </h2>
 
@@ -1154,7 +1055,7 @@
 
             <div class="row g-4 align-items-center">
 
-                <div class="col-lg-7">
+                <div class="col-lg-7" data-aos="zoom-in">
 
                     <div id="formCard" class="p-4 contact-card">
 
@@ -1183,7 +1084,8 @@
                                         data-en="Phone Number">
                                         رقم الهاتف
                                     </label>
-                                    <input type="text" class="form-control" id="phone" placeholder="+20 10 000 0000">
+                                    <input type="text" class="form-control phone" id="phone"
+                                        placeholder="+00966 11 234 5678">
                                 </div>
 
                                 <div class="col-md-6">
@@ -1224,9 +1126,9 @@
                                 </div>
 
                                 <div class="col-12">
-                                    <button class="btn btn-warning w-100 py-3 fw-bold" data-ar="إرسال الطلب"
-                                        data-en="Send Request">
-                                        إرسال الطلب
+                                    <button class="btn btn-warning w-100 py-3 fw-bold d-flex align-items-center gap-2 justify-content-center" >
+                                     <span data-ar="إرسال الطلب"
+                                        data-en="Send Request">   إرسال الطلب</span>
                                         <i class="fas fa-arrow-alt-circle-left"></i>
                                     </button>
                                 </div>
@@ -1255,7 +1157,7 @@
                     </div>
 
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5" data-aos="zoom-in">
 
                     <div class="contact-card p-4"
                         style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://img.rocket.new/generatedImages/rocket_gen_img_14443bace-1775916330791.png); background-position: center; min-height: 400px; display: flex; flex-direction: column; gap: 20px;">
@@ -1270,9 +1172,8 @@
                                     المقر
                                 </h3>
 
-                                <p class="text-white mb-0" data-ar="الدار البيضاء - الرياض - السعودية"
-                                    data-en="Casablanca - Riyadh - Saudi Arabia">
-                                    الدار البيضاء - الرياض - السعودية
+                                <p class="text-white mb-0" data-ar=" الرياض - السعودية" data-en="Riyadh - Saudi Arabia">
+                                    الرياض - السعودية
                                 </p>
                             </div>
 
@@ -1289,7 +1190,7 @@
                                     الهاتف
                                 </h3>
 
-                                <p class="text-white mb-0 phone">+966 11 234 5678</p>
+                                <p class="text-white mb-0 phone">+00966 11 234 5678</p>
                             </div>
 
                         </div>
@@ -1321,8 +1222,8 @@
                                     الرد
                                 </h3>
 
-                                <p class="text-white mb-0" data-ar="خلال 24 ساعة" data-en="Within 24 hours">
-                                    خلال 24 ساعة
+                                <p class="text-white mb-0" data-ar="خلال  دقائق" data-en="Within minutes">
+                                    خلال دقائق
                                 </p>
                             </div>
 
@@ -1339,14 +1240,14 @@
     </section>
     <footer class="footer-section text-white">
 
-        <div class="container py-5">
+        <div class="container py-5" >
 
-            <div class="row g-4">
+            <div class="row g-4"  data-aos="fade-up">
 
                 <div class="col-md-4">
 
                     <div class="d-flex align-items-center gap-2 mb-3">
-                         <img src="imgs/logo.jpg" width="58" alt="" class="rounded mx-2">
+                        <img src="imgs/logo.jpg" width="58" alt="" class="rounded mx-2">
 
                         <h5 class="mb-0 fw-bold" data-ar="أبعاد الكيان المتقدمة" data-en="abead alkian almutaqadima">
                             أبعاد الكيان المتقدمة
